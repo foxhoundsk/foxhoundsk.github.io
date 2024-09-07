@@ -22,7 +22,6 @@ exclude:
   - bundle-artifacts
 
 title: Fox at Earth
-email: foxhoundsk.tw@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Seeking the answer from your inner self.
 baseurl: "" # the subpath of your site, e.g. /blog
