@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux kernel module development in Archlinux-based VM"
+title:  "Linux kernel module development in Archlinux based VM"
 categories: Linux deviceDriver VM
 ---
 
