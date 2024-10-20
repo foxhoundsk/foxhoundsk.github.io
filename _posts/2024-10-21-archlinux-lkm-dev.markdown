@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linux kernel module development in Archlinux based VM"
-categories: Linux deviceDriver VM
+categories: linux driver vm
 ---
 
 Linux kernel module (LKM) development is usually conducted inside a VM to prevent corruption of the dev box. Most of the LKM dev. setup guides are targeting Ubuntu based machine, but I love Arch Linux, and there have sparse resources regarding LKM dev. on Archlinux-based VM. So I would like to make a post discussing this. Specifically, I'll discuss how to make the kernel header that is required for out-of-date (no longer present in Pacman latest database) kernel images.
