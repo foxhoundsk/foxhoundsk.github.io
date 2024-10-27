@@ -1,7 +1,9 @@
 ---
-layout: post
-title:  "So you want to use legacy Linux GPIO?"
-categories: linux gpio optimization syscall
+title: "So you want to use legacy Linux GPIO?"
+date: 2024-09-06T00:32:06+08:00
+draft: false
+description: Linux GPIO
+isStarred: false
 ---
 
 Starting kernel 4.8, a new GPIO interface, GPIO character device, replaced the legacy GPIO interface. The cons of the legacy interface are:

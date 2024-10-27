@@ -1,0 +1,7 @@
+baseURL = 'https://foxhoundsk.github.io/'
+languageCode = 'en-us'
+title = 'As the universe, so the soul'
+contentDir = 'posts'
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-sid/hugo-blog-awesome"

@@ -1,7 +1,9 @@
 ---
-layout: post
 title:  "Linux kernel module development in Archlinux based VM"
-categories: linux driver vm
+date: 2024-10-23T00:32:06+08:00
+draft: false
+description: Linux VM
+isStarred: false
 ---
 
 Linux kernel module (LKM) development is usually conducted inside a VM to prevent corruption of the dev box. Most of the LKM dev. setup guides are targeting Ubuntu based machine, but I love Arch Linux, and there have sparse resources regarding LKM dev. on Archlinux-based VM. So I would like to make a post discussing this. Specifically, I'll discuss how to make the kernel header that is required for out-of-date (no longer present in Pacman latest database) kernel images.
@@ -26,7 +28,7 @@ gpg --import keys/pgp/*
 
 In your device driver directory, make changes to the Makefile. Specifically, point `KERNEL_SRC` (or the likes) to the directory that you just ran `makepkg -s`. That is, the directory containing artifacts such as `Module.symvers`.
 
-You are now good to compile and load the kernel module. Happy kernel hacking!
+Now we are good to compile and load the kernel module for our specific kernel. Happy kernel hacking!
 
 [0] One can of course update the kernel to the latest version to solve the version mismatch dilemma, but maybe one would like to stick with a specific kernel release.
 [1] `-si` is also fine if one would like to have the header installed after the build.
