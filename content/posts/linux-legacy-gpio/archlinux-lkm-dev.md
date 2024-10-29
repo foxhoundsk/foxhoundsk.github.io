@@ -1,14 +1,14 @@
 ---
-title:  "Linux kernel module development in Archlinux based VM"
+title:  "Linux kernel module development in Arch Linux based VM"
 date: 2024-10-23T00:32:06+08:00
 draft: false
 description: Linux VM
 isStarred: false
 ---
 
-Linux kernel module (LKM) development is usually conducted inside a VM to prevent corruption of the dev box. Most of the LKM dev. setup guides are targeting Ubuntu based machine, but I love Arch Linux, and there have sparse resources regarding LKM dev. on Archlinux-based VM. So I would like to make a post discussing this. Specifically, I'll discuss how to make the kernel header that is required for out-of-date (no longer present in Pacman latest database) kernel images.
+Linux kernel module (LKM) development is usually conducted inside a VM to prevent corruption of the dev box. Most of the LKM dev. setup guides are targeting Ubuntu based machine, but I love Arch Linux, and there have sparse resources regarding LKM dev. on Arch Linux based VM. So I would like to make a post discussing this. Specifically, I'll discuss how to make the kernel header that is required for out-of-date (no longer present in Pacman latest database) kernel images.
 
-First, Linux requires that the kernel module has the same vermagic comparing to the targeting kernel, which means an appropriate kernel header is required for the module to load successfully. On Archlinux, the **latest** header can be acquired by installing pakage `linux-headers`. However, due to the fact that the kernel came along with the prebuilt VM image, or the likes, can't usually match the latest header, we often times need to manually download the corresponding header [0].
+First, Linux requires that the kernel module has the same vermagic comparing to the targeting kernel, which means an appropriate kernel header is required for the module to load successfully. On Arch Linux, the **latest** header can be acquired by installing pakage `linux-headers`. However, due to the fact that the kernel came along with the prebuilt VM image, or the likes, can't usually match the latest header, we often times need to manually download the corresponding header [0].
 
 To download specific kernel header, navigate to:
 

@@ -3,51 +3,90 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Linux kernel module development in Archlinux based VM | As the universe, so the soul</title>
-<meta property="og:title" content="Linux kernel module development in Archlinux based VM | As the universe, so the soul" />
-<meta name="twitter:title" content="Linux kernel module development in Archlinux based VM | As the universe, so the soul" />
-<meta itemprop="name" content="Linux kernel module development in Archlinux based VM | As the universe, so the soul" />
-<meta name="application-name" content="Linux kernel module development in Archlinux based VM | As the universe, so the soul" />
+<title itemprop="name">So you want to use legacy Linux GPIO? | As the universe, so the soul</title>
+<meta property="og:title" content="So you want to use legacy Linux GPIO? | As the universe, so the soul" />
+<meta name="twitter:title" content="So you want to use legacy Linux GPIO? | As the universe, so the soul" />
+<meta itemprop="name" content="So you want to use legacy Linux GPIO? | As the universe, so the soul" />
+<meta name="application-name" content="So you want to use legacy Linux GPIO? | As the universe, so the soul" />
 <meta property="og:site_name" content="" />
 
-<meta name="description" content="Linux VM">
-<meta itemprop="description" content="Linux VM" />
-<meta property="og:description" content="Linux VM" />
-<meta name="twitter:description" content="Linux VM" />
+<meta name="description" content="Linux GPIO">
+<meta itemprop="description" content="Linux GPIO" />
+<meta property="og:description" content="Linux GPIO" />
+<meta name="twitter:description" content="Linux GPIO" />
 
 <meta property="og:locale" content="en-us" />
 <meta name="language" content="en-us" />
 
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/archlinux-lkm-dev/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/linux-legacy-gpio/linux-legacy-gpio/" title="" />
 
 
 
 
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2024-09-06T00:32:06&#43;0800 />
+    <meta property="article:published_time" content=2024-09-06T00:32:06&#43;0800 />
+    <meta property="og:url" content="http://localhost:1313/posts/linux-legacy-gpio/linux-legacy-gpio/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "So you want to use legacy Linux GPIO?",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2024-09-06",
+        "description": "Linux GPIO",
+        "wordCount":  231 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2024-09-06",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "As the universe, so the soul"
+        }
+    }
+    </script>
 
 
 <meta name="generator" content="Hugo 0.136.3">
 
     
-    <meta property="og:url" content="http://localhost:1313/archlinux-lkm-dev/">
+    <meta property="og:url" content="http://localhost:1313/posts/linux-legacy-gpio/linux-legacy-gpio/">
   <meta property="og:site_name" content="As the universe, so the soul">
-  <meta property="og:title" content="Linux kernel module development in Archlinux based VM">
-  <meta property="og:description" content="Linux VM">
+  <meta property="og:title" content="So you want to use legacy Linux GPIO?">
+  <meta property="og:description" content="Linux GPIO">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2024-10-23T00:32:06+08:00">
-    <meta property="article:modified_time" content="2024-10-23T00:32:06+08:00">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-06T00:32:06+08:00">
+    <meta property="article:modified_time" content="2024-09-06T00:32:06+08:00">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Linux kernel module development in Archlinux based VM">
-  <meta name="twitter:description" content="Linux VM">
+  <meta name="twitter:title" content="So you want to use legacy Linux GPIO?">
+  <meta name="twitter:description" content="Linux GPIO">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/archlinux-lkm-dev/">
+    <link rel="canonical" href="http://localhost:1313/posts/linux-legacy-gpio/linux-legacy-gpio/">
     <link href="/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -71,10 +110,11 @@
     <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
 
     
-    </head>
+    
+</head>
 <body data-theme = "" class="notransition">
 
-<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+<script src="/js/theme.js"></script>
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
@@ -118,35 +158,38 @@ stroke-linejoin="round" class="feather feather-home">
     <main class="page-content" aria-label="Content">
         <article>
             <header class="header">
-                <h1 class="header-title">Linux kernel module development in Archlinux based VM</h1>
+                <h1 class="header-title">So you want to use legacy Linux GPIO?</h1>
                 
                 
                 
                 <div class="post-meta">
-                    <time datetime="2024-10-23T00:32:06&#43;08:00" itemprop="datePublished"> Oct 23, 2024 </time>
+                    <time datetime="2024-09-06T00:32:06&#43;08:00" itemprop="datePublished"> Sep 6, 2024 </time>
                 </div>
                 
             </header>
             
             <div class="page-content">
-                <p>Linux kernel module (LKM) development is usually conducted inside a VM to prevent corruption of the dev box. Most of the LKM dev. setup guides are targeting Ubuntu based machine, but I love Arch Linux, and there have sparse resources regarding LKM dev. on Archlinux-based VM. So I would like to make a post discussing this. Specifically, I&rsquo;ll discuss how to make the kernel header that is required for out-of-date (no longer present in Pacman latest database) kernel images.</p>
-<p>First, Linux requires that the kernel module has the same vermagic comparing to the targeting kernel, which means an appropriate kernel header is required for the module to load successfully. On Archlinux, the <strong>latest</strong> header can be acquired by installing pakage <code>linux-headers</code>. However, due to the fact that the kernel came along with the prebuilt VM image, or the likes, can&rsquo;t usually match the latest header, we often times need to manually download the corresponding header [0].</p>
-<p>To download specific kernel header, navigate to:</p>
-<p><a href="https://gitlab.archlinux.org/archlinux/packaging/packages/linux">https://gitlab.archlinux.org/archlinux/packaging/packages/linux</a></p>
-<p>Choose the git tag of interest and clone the repo, for example:
-{% highlight c %}
-git clone &ndash;depth 1 &ndash;branch v6.10.8-arch1 <a href="https://github.com/archlinux/linux.git">https://github.com/archlinux/linux.git</a> linux-6.10.8-arch1
-{% endhighlight c %}</p>
-<p>Afterwards, run <code>makepkg -s</code> [1] to get the artifacts (e.g. Module.symvers) required for building the LKM.</p>
-<p>During <code>makepkg</code>, one may encounter an error stating that the PGP key is unknown. To get rid of this, navigate to the header directory [2], then run:
-{% highlight c %}
-gpg &ndash;import keys/pgp/*
-{% endhighlight c %}</p>
-<p>In your device driver directory, make changes to the Makefile. Specifically, point <code>KERNEL_SRC</code> (or the likes) to the directory that you just ran <code>makepkg -s</code>. That is, the directory containing artifacts such as <code>Module.symvers</code>.</p>
-<p>Now we are good to compile and load the kernel module for our specific kernel. Happy kernel hacking!</p>
-<p>[0] One can of course update the kernel to the latest version to solve the version mismatch dilemma, but maybe one would like to stick with a specific kernel release.
-[1] <code>-si</code> is also fine if one would like to have the header installed after the build.
-[2] The directory containing directory <code>keys</code>.</p>
+                <p>Starting kernel 4.8, a new GPIO interface, GPIO character device, replaced the legacy GPIO interface. The cons of the legacy interface are:</p>
+<ul>
+<li>State not tied to process</li>
+<li>Concurrent access to sysfs attributes</li>
+<li>If process crashes, the GPIOs remain exported</li>
+<li>Cumbersome API</li>
+<li>Single sequence of GPIO numbers representing a two-level hierarchy - necessary to calculate the number of the GPIO, numbers not stable</li>
+</ul>
+<p>For details, see the <a href="https://ostconf.com/system/attachments/files/000/001/532/original/Linux_Piter_2018_-_New_GPIO_interface_for_linux_userspace.pdf">maintainer&rsquo;s slides</a>.</p>
+<p>However, there is still plenty of old kernel users relying on the legacy GPIO.</p>
+<p>The GPIO event consuming, however, typically requires 2 syscalls to do the trick, which are read(2) and lseek(2). Alternatively, one can also close-and-open after the read, which requires 3 syscalls.</p>
+<p>Actually, it can be done with a single syscall, which is pread(2).</p>
+<p>pread(2) has the following signature:</p>
+<p>{% highlight c %}
+ssize_t pread(int fd, void buf[.count], size_t count, off_t offset);
+{% endhighlight %}</p>
+<p>As the last parameter (i.e. <code>offset</code>) suggests, using pread(2) would not update the file offset after the read. Meaning one would not need to reset the file offset manually.</p>
+<p>So, it is recommended to use pread(2) for consuming the event.</p>
+<p>You would not like additional syscalls to harm your CPU cache and the like. Besides, issuing non-vdso syscalls is never a cheap act.</p>
+<hr>
+<p>This post is here because there would probably no one interested in checking the kernel document, which I <a href="https://github.com/torvalds/linux/commit/7f1e45f4ae7671550e15354ef87194bccd99ecec">recently added</a> the above recommendadtion.</p>
 
             </div>
         </article></main>
@@ -170,7 +213,7 @@ gpg &ndash;import keys/pgp/*
 
 
     
-    <script src="http://localhost:1313/js/main.min.4ee188e1744c19816e95a540b2650ed9f033ea0371e74eac8e717355cfca8741.js" integrity="sha256-TuGI4XRMGYFulaVAsmUO2fAz6gNx506sjnFzVc/Kh0E="></script>
+    <script async src="http://localhost:1313/js/main.js" ></script>
 
     
 
