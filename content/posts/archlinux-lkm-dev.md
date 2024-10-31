@@ -15,21 +15,23 @@ To download specific kernel header, navigate to:
 https://gitlab.archlinux.org/archlinux/packaging/packages/linux
 
 Choose the git tag of interest and clone the repo, for example:
-{% highlight c %}
+```
 git clone --depth 1 --branch v6.10.8-arch1 https://github.com/archlinux/linux.git linux-6.10.8-arch1
-{% endhighlight c %}
+```
 
 Afterwards, run `makepkg -s` [1] to get the artifacts (e.g. Module.symvers) required for building the LKM.
 
 During `makepkg`, one may encounter an error stating that the PGP key is unknown. To get rid of this, navigate to the header directory [2], then run:
-{% highlight c %}
+```
 gpg --import keys/pgp/*
-{% endhighlight c %}
+```
 
 In your device driver directory, make changes to the Makefile. Specifically, point `KERNEL_SRC` (or the likes) to the directory that you just ran `makepkg -s`. That is, the directory containing artifacts such as `Module.symvers`.
 
 Now we are good to compile and load the kernel module for our specific kernel. Happy kernel hacking!
 
 [0] One can of course update the kernel to the latest version to solve the version mismatch dilemma, but maybe one would like to stick with a specific kernel release.
+
 [1] `-si` is also fine if one would like to have the header installed after the build.
+
 [2] The directory containing directory `keys`.

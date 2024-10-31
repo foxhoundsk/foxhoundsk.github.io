@@ -24,9 +24,9 @@ Actually, it can be done with a single syscall, which is pread(2).
 
 pread(2) has the following signature:
 
-{% highlight c %}
+```
 ssize_t pread(int fd, void buf[.count], size_t count, off_t offset);
-{% endhighlight %}
+```
 
 As the last parameter (i.e. `offset`) suggests, using pread(2) would not update the file offset after the read. Meaning one would not need to reset the file offset manually.
 
