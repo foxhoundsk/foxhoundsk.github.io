@@ -1,6 +1,7 @@
 baseURL = 'https://foxhoundsk.github.io/'
 languageCode = 'en-us'
 title = 'As the universe, so the soul'
+enableComments = true
 
 [module]
   [[module.imports]]
