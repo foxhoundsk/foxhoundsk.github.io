@@ -27,7 +27,7 @@ The Multi-dimensional body can be cleaned through, for example, take a shower. A
 
 > Resonate with The Divine Source (3 times), I channel the light of lucent clear and the light of cyōng nuǎn to my Multi-dimensional body, clean all the black magic, viruses, negative energy, cut off the negative connections, GaNaKuKu, GaNaKuKu, GaNaKuKu...
 
-Few minutes later, you may get distracted by other things, you can re-cast the decree to maintain the effectiveness. Repeat the decree until you're feeling good.
+A few minutes later, you may get distracted by other things, you can re-cast the decree to maintain the effectiveness. Repeat the decree until you're feeling good.
 
 If you don't feel recovered after a long-term cleaning, you have to check, for example, whether you have bad connection to other beings, accessories that are in bad Multi-dimensional body state, which can be the collector of negative energy.
 
