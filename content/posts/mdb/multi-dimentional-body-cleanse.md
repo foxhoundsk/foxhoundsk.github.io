@@ -6,6 +6,8 @@ description: cleaning
 isStarred: false
 ---
 
+N.B. You should question the validness of this post by asking your own inner wisdom. Always validating things with inner wisdom and verifying it with others, there is NO sacred being in this universe who tells always-true-story or the likes. You, as a sacred part of this universe, is capable of asking your inner wisdom virtually everything.
+
 As a being in this universe, we, human beings, have not only the Physical body that we can see or touch, but also the following:
 
 - Plasma Body
