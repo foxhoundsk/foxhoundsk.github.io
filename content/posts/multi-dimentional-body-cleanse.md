@@ -25,7 +25,7 @@ of which the Plasma body is adjacent to the Physical body. We call the summation
 
 Leaving the Multi-dimensional body contaminated is not good in many aspects, e.g. luckiness [1], health [2]. Plus, once you've experienced the state that the Multi-dimensional body is clean, you often times don't feel good when having contamination.
 
-The Multi-dimensional body can be cleaned through, for example, take a shower. And there exists a more practical way, which is casting a decree. Specifically, the decree can be:
+The Multi-dimensional body can be cleaned through, for example, taking a shower. And there exists a more practical way, which is casting a decree. Specifically, the decree can be:
 
 > Resonate with The Divine Source (3 times), I channel the light of lucent clear and the light of cyōng nuǎn to my Multi-dimensional body, clean all the black magic, viruses, negative energy, cut off the negative connections, GaNaKuKu, GaNaKuKu, GaNaKuKu...
 
